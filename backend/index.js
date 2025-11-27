@@ -17,7 +17,7 @@ let app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
- origin:["https://vibefit-one.onrender.com" , "https://vibefit-adminonee.onrender.com"],
+ origin:["https://vibefit-one.onrender.com" , "https://vibefit-admino1ne.onrender.com"],
  credentials:true
 }))
 
