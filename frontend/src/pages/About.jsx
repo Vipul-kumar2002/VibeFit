@@ -1,56 +1,101 @@
-import React from 'react'
-import Title from '../component/Title'
-import about from '../assets/about.jpg'
-import NewLetterBox from '../component/NewLetterBox'
+import React from "react";
+import Title from "../component/Title";
+import about from "../assets/About1.jpg";
+import NewLetterBox from "../component/NewLetterBox";
 
 function About() {
   return (
-    <div className=' w-[99vw] min-h-[100vh] flex items-center justify-center flex-col  bg-gradient-to-l from-[#141414] to-[#0c2025] gap-[50px] pt-[80px]'>
-      <Title text1={'ABOUT'} text2={'US'}/>
-      <div className='w-[100%]  flex items-center justify-center flex-col lg:flex-row'>
+    <div className="w-full min-h-screen flex items-center justify-center flex-col bg-gradient-to-l from-[#141414] to-[#0c2025] gap-[60px] pt-[100px] pb-[80px]">
+      <div>
+        <Title text1={"ABOUT"} text2={"US"} />
+      </div>
 
-        <div className='lg:w-[50%] w-[100%] flex items-center justify-center '>
-          <img src={about} alt="" className='lg:w-[65%] w-[80%] shadow-md shadow-black rounded-sm' />
+      <div className="w-[100%] max-w-[1200px] flex items-center justify-center flex-col lg:flex-row gap-10 px-4">
+        <div className="lg:w-[50%] w-[100%] flex items-center justify-center relative">
+          {/* Subtle gold glow behind the image for a premium dark mode effect */}
+          <div className="absolute inset-0 bg-[#cba135] rounded-xl blur-2xl opacity-10 transform translate-x-2 translate-y-2"></div>
+          <img
+            src={about}
+            alt="VibeFit Fashion Lifestyle"
+            className="lg:w-[80%] w-[90%] rounded-xl shadow-2xl shadow-[#cba135]/20 border-[1px] border-[#cba135]/40 z-10 object-cover"
+          />
         </div>
-        <div className='lg:w-[50%] w-[80%] flex items-start justify-center gap-[20px]  flex-col mt-[20px] lg:mt-[0px]'>
-          <p className='lg:w-[80%] w-[100%] text-[white] md:text-[16px] text-[13px]'>
-            OneCart born for smart, seamless shopping—created to deliver quality products, trending styles, and everyday essentials in one place. With reliable service, fast delivery, and great value, OneCart makes your online shopping experience simple, satisfying, and stress-free.
+
+        <div className="lg:w-[50%] w-[100%] flex items-start justify-center gap-[25px] flex-col mt-[30px] lg:mt-[0px]">
+          <p className="lg:w-[90%] w-[100%] text-[#e5e5e5] md:text-[17px] text-[15px] leading-relaxed font-light tracking-wide">
+            VibeFit was born for the modern trendsetter—created to deliver the
+            latest fashion, timeless styles, and everyday wardrobe essentials
+            all in one place. Whether you're shopping for menswear, women's
+            fashion, or cute outfits for the kids, VibeFit makes upgrading your
+            closet simple, exciting, and accessible.
           </p>
-          <p className='lg:w-[80%] w-[100%] text-[white] md:text-[16px] text-[13px]'>
-             modern shoppers—combining style, convenience, and affordability. Whether it’s fashion, essentials, or trends, we bring everything you need to one trusted platform with fast delivery, easy returns, and a customer-first shopping experience you’ll love.
+          <p className="lg:w-[90%] w-[100%] text-[#e5e5e5] md:text-[17px] text-[15px] leading-relaxed font-light tracking-wide">
+            Designed for style-conscious shoppers—combining premium quality,
+            comfort, and affordability. From standout party wear to casual
+            basics and ethnic collections, we bring top trends to one trusted
+            platform. Enjoy fast delivery, easy returns, and a seamless shopping
+            experience tailored for the whole family.
           </p>
-          <p className='lg:w-[80%] w-[100%] text-[15px] text-[white] lg:text-[18px] mt-[10px] font-bold'>Our Mission</p>
-          <p className='lg:w-[80%] w-[100%] text-[white] md:text-[16px] text-[13px]'>
-            Our mission is to redefine online shopping by delivering quality, affordability, and convenience. OneCart connects customers with trusted products and brands, offering a seamless, customer-focused experience that saves time, adds value, and fits every lifestyle and need.
+
+          <p className="text-[22px] text-[#cba135] lg:text-[26px] mt-[15px] font-serif font-semibold tracking-wide">
+            Our Mission
+          </p>
+          <p className="lg:w-[90%] w-[100%] text-[#e5e5e5] md:text-[17px] text-[15px] leading-relaxed font-light tracking-wide">
+            Our mission is to redefine online fashion by delivering inclusive
+            styles, great value, and unmatched convenience. VibeFit connects you
+            with clothing that empowers you to dress with confidence, express
+            your unique vibe, and look your absolute best for every occasion.
           </p>
         </div>
       </div>
-      <div className='w-[100%] flex items-center justify-center flex-col gap-[10px]'>
-        <Title text1={'WHY'} text2={'CHOOSE US'}/>
-        <div className='w-[80%] flex items-center justify-center lg:flex-row flex-col py-[40px]'>
 
-          <div className='lg:w-[33%] w-[90%] h-[250px] border-[1px] border-gray-100 flex items-center justify-center gap-[20px] flex-col  px-[40px] py-[10px] text-[white] backdrop-blur-[2px] bg-[#ffffff0b]'>
-            <b className='text-[20px] font-semibold text-[#bff1f9]'>Quality Assurance</b>
-            <p>We guarantee quality through strict checks, reliable sourcing, and a commitment to customer satisfaction always.</p>
-          </div>
-           <div className='lg:w-[33%] w-[90%] h-[250px] border-[1px] border-gray-100 flex items-center justify-center gap-[20px] flex-col  px-[40px] py-[10px] text-[white] backdrop-blur-[2px] bg-[#ffffff0b]'>
-            <b className='text-[20px] font-semibold text-[#bff1f9]'>Convenience</b>
-            <p>
-             Shop easily with fast delivery, simple navigation, secure checkout, and everything you need in one place.
+      <div className="w-[100%] max-w-[1200px] flex items-center justify-center flex-col gap-[30px] px-4 mt-10">
+        <div>
+          <Title text1={"WHY"} text2={"CHOOSE US"} />
+        </div>
+
+        <div className="w-full flex items-center justify-center lg:flex-row flex-col gap-8 py-[20px]">
+          {/* Card 1 */}
+          <div className="lg:w-[32%] w-full min-h-[280px] bg-[#ffffff05] backdrop-blur-md border-[1px] border-[#cba135]/30 rounded-2xl shadow-lg shadow-black/50 flex items-center justify-start gap-[20px] flex-col px-[40px] py-[40px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-[#cba135]/80 hover:shadow-[#cba135]/10">
+            <b className="text-[20px] font-serif font-bold text-[#cba135] text-center uppercase tracking-wider">
+              Trend & Quality
+            </b>
+            <p className="text-center text-[#e5e5e5] leading-relaxed font-light">
+              We curate the latest styles with a strict focus on premium
+              fabrics, flawless stitching, and brands you can trust for your
+              everyday wear.
             </p>
           </div>
-           <div className='lg:w-[33%] w-[90%] h-[250px] border-[1px] border-gray-100 flex items-center justify-center gap-[20px] flex-col  px-[40px] py-[10px] text-[white] backdrop-blur-[2px] bg-[#ffffff0b]'>
-            <b className='text-[20px] font-semibold text-[#bff1f9]'>Exceptional Customer Service</b>
-            <p>
-              Our dedicated support team ensures quick responses, helpful solutions, and a smooth shopping experience every time.
+
+          {/* Card 2 */}
+          <div className="lg:w-[32%] w-full min-h-[280px] bg-[#ffffff05] backdrop-blur-md border-[1px] border-[#cba135]/30 rounded-2xl shadow-lg shadow-black/50 flex items-center justify-start gap-[20px] flex-col px-[40px] py-[40px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-[#cba135]/80 hover:shadow-[#cba135]/10">
+            <b className="text-[20px] font-serif font-bold text-[#cba135] text-center uppercase tracking-wider">
+              Seamless Shopping
+            </b>
+            <p className="text-center text-[#e5e5e5] leading-relaxed font-light">
+              Explore thousands of styles effortlessly with our intuitive app
+              navigation, secure checkout, and lightning-fast delivery to your
+              doorstep.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="lg:w-[32%] w-full min-h-[280px] bg-[#ffffff05] backdrop-blur-md border-[1px] border-[#cba135]/30 rounded-2xl shadow-lg shadow-black/50 flex items-center justify-start gap-[20px] flex-col px-[40px] py-[40px] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-[#cba135]/80 hover:shadow-[#cba135]/10">
+            <b className="text-[20px] font-serif font-bold text-[#cba135] text-center uppercase tracking-wider">
+              Easy Returns
+            </b>
+            <p className="text-center text-[#e5e5e5] leading-relaxed font-light">
+              Shop with absolute peace of mind. We offer hassle-free exchanges,
+              easy returns, and a dedicated team ready to help you with sizing
+              or styling.
             </p>
           </div>
         </div>
       </div>
-      <NewLetterBox/>
-      
+
+      <NewLetterBox />
     </div>
-  )
+  );
 }
 
-export default About
+export default About;
