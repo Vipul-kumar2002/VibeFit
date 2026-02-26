@@ -19,7 +19,7 @@ function Footer() {
             by trusted service designed to make your life easier every day.
           </p>
           <p className="text-[15px] text-[#1e2223] flex md:hidden">
-            Fast. Easy. Reliable. OneCart Shopping
+            Fast. Easy. Reliable. VibeFit Shopping
           </p>
         </div>
         <div className="md:w-[25%] w-[30%] h-[100%] flex items-center justify-center flex-col text-center">

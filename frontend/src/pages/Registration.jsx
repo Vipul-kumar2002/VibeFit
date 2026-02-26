@@ -81,7 +81,7 @@ function Registration() {
       >
         <img className="w-10" src={Logo} alt="OneCart Logo" />
         <h1 className="text-2xl font-sans font-semibold tracking-wide">
-          OneCart
+          VibeFit
         </h1>
       </div>
 
@@ -91,7 +91,7 @@ function Registration() {
           Create an Account
         </h2>
         <p className="text-sm md:text-base text-gray-300">
-          Welcome to OneCart, sign up to place your order
+          Welcome to VibeFit, sign up to place your order
         </p>
       </div>
 
